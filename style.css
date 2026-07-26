@@ -1,0 +1,337 @@
+/* =======================
+   إعدادات عامة
+======================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Cairo',sans-serif;
+}
+
+body{
+
+background:
+linear-gradient(135deg,#f8f6f1,#efe5d2,#e9dcc5);
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:25px;
+
+overflow-x:hidden;
+
+}
+
+/* =======================
+   شاشة البداية
+======================= */
+
+#loader{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:#f8f6f1;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:9999;
+
+transition:.8s;
+
+}
+
+#loader.hide{
+
+opacity:0;
+visibility:hidden;
+
+}
+
+.loaderLogo{
+
+width:120px;
+
+animation:logo 2s infinite alternate;
+
+}
+
+@keyframes logo{
+
+from{
+
+transform:scale(.95);
+
+}
+
+to{
+
+transform:scale(1.05);
+
+}
+
+}
+
+#loader h1{
+
+margin-top:20px;
+
+font-size:34px;
+
+color:#8b6b1f;
+
+}
+
+#loader p{
+
+margin-top:8px;
+
+color:#777;
+
+}
+
+/* =======================
+   الكارت الرئيسي
+======================= */
+
+.container{
+
+width:100%;
+max-width:430px;
+
+background:rgba(255,255,255,.55);
+
+backdrop-filter:blur(25px);
+
+border-radius:35px;
+
+padding:30px 22px;
+
+border:1px solid rgba(255,255,255,.4);
+
+box-shadow:
+
+0 20px 60px rgba(0,0,0,.12);
+
+}
+
+/* =======================
+   الهيدر
+======================= */
+
+.header{
+
+text-align:center;
+
+}
+
+.logo{
+
+width:85px;
+
+margin-bottom:15px;
+
+}
+
+.profile{
+
+width:130px;
+height:130px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:5px solid #c9a548;
+
+box-shadow:
+
+0 0 30px rgba(201,165,72,.45);
+
+margin-bottom:15px;
+
+}
+
+.header h2{
+
+font-size:28px;
+
+color:#5f4217;
+
+font-weight:800;
+
+}
+
+.job{
+
+display:block;
+
+margin-top:10px;
+
+font-size:17px;
+
+font-weight:700;
+
+color:#a37a2b;
+
+}
+
+.desc{
+
+margin-top:15px;
+
+color:#666;
+
+line-height:1.8;
+
+}
+
+/* =======================
+   البطاقات
+======================= */
+
+.cards{
+
+margin-top:30px;
+
+display:flex;
+
+flex-direction:column;
+
+gap:14px;
+
+}
+
+.card{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px 20px;
+
+border-radius:20px;
+
+background:rgba(255,255,255,.75);
+
+backdrop-filter:blur(12px);
+
+text-decoration:none;
+
+color:#333;
+
+transition:.35s;
+
+box-shadow:
+
+0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.card:hover{
+
+transform:translateY(-3px);
+
+}
+
+.left{
+
+display:flex;
+
+align-items:center;
+
+gap:14px;
+
+font-size:18px;
+
+font-weight:700;
+
+}
+
+.left i{
+
+font-size:22px;
+
+color:#b8860b;
+
+}
+
+.card>.bi{
+
+font-size:22px;
+
+color:#999;
+
+}
+
+/* =======================
+   الفوتر
+======================= */
+
+footer{
+
+margin-top:35px;
+
+text-align:center;
+
+color:#888;
+
+font-size:14px;
+
+}
+
+/* =======================
+   Responsive
+======================= */
+
+@media(max-width:480px){
+
+.container{
+
+padding:22px 18px;
+
+}
+
+.profile{
+
+width:115px;
+height:115px;
+
+}
+
+.header h2{
+
+font-size:24px;
+
+}
+
+.left{
+
+font-size:16px;
+
+}
+
+}
+
+.container{
+    display:block;
+}
